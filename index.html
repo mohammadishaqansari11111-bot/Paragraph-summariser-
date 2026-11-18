@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briefly | Free AI Paragraph &amp; PDF Summarizer</title>
+  <meta name="description" content="Summarize paragraphs, articles, PDFs, images, and audio into clear key points with Briefly. Choose your summary length and format. No sign-up needed." />
+  <link rel="canonical" href="https://paragraph-summarizer.netlify.app/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://paragraph-summarizer.netlify.app/" />
+  <meta property="og:site_name" content="Briefly" />
+  <meta property="og:title" content="Briefly | Free AI Paragraph &amp; PDF Summarizer" />
+  <meta property="og:description" content="Summarize paragraphs, articles, PDFs, images, and audio into clear key points with Briefly. Choose your summary length and format. No sign-up needed." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Briefly | Free AI Paragraph &amp; PDF Summarizer" />
+  <meta name="twitter:description" content="Summarize paragraphs, articles, PDFs, images, and audio into clear key points with Briefly. Choose your summary length and format. No sign-up needed." />
+  <meta name="siteName" content="Briefly" />
+  <meta name="siteDescription" content="Summarize paragraphs, articles, PDFs, images, and audio into clear key points with Briefly. Choose your summary length and format. No sign-up needed." />
+  <meta name="theme-color" content="#285c45" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='11' fill='%23285c45'/%3E%3Cpath d='M12 11h17M12 19h13M12 27h8' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Manrope:wght@400;500;600;650;700;750;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-defs" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="spark" viewBox="0 0 24 24"><path d="m12 3 2.5 6.5L21 12l-6.5 2.5L12 21l-2.5-6.5L3 12l6.5-2.5L12 3Z"/><path d="m20 2 .6 1.4L22 4l-1.4.6L20 6l-.6-1.4L18 4l1.4-.6L20 2Z"/></symbol>
+    <symbol id="file" viewBox="0 0 24 24"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></symbol>
+    <symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></symbol>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></symbol>
+  </defs></svg>
+  <header class="site-header"><div class="nav-wrap">
+    <a href="/" class="brand" aria-label="Briefly home"><span class="brand-mark"><i></i><i></i><i></i></span>briefly<span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation"><a href="#workspace" class="active">Summarizer</a><a href="#how-it-works">How it works <span>↗</span></a></nav>
+    <span class="nav-note"><span></span> A little less, a lot clearer.</span>
+  </div></header>
+  <main>
+    <section class="intro">
+      <div class="intro-copy"><div class="eyebrow"><svg><use href="#spark"/></svg> BIG IDEAS. FEWER WORDS.</div>
+      <h1>Less reading.<br>More <span>understanding.</span></h1>
+      <p>Turn long paragraphs into clear, important points.<br>Keep the meaning. Skip the overwhelm.</p></div>
+      <div class="intro-art" aria-hidden="true"><div class="paper paper-back"><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="art-arrow">⤳</div><div class="paper paper-front"><div class="paper-label"><svg><use href="#spark"/></svg> THE IMPORTANT BITS</div><div class="art-row"><i>✓</i><b></b></div><div class="art-row"><i>✓</i><b></b></div><div class="art-row"><i>✓</i><b></b></div></div><span class="art-star">✳</span><span class="art-caption">Clarity looks good on you.</span></div>
+    </section>
+    <section id="workspace" class="workspace" aria-label="Paragraph summarizer">
+      <div class="workspace-top"><div class="tool-title"><span class="tool-icon"><svg><use href="#spark"/></svg></span><div><h2>Paragraph summarizer</h2><p>From too much to just enough.</p></div></div><span class="free-badge"><span></span> Free to use</span></div>
+      <div class="editors">
+        <div class="editor input-editor"><div class="editor-heading"><h3><svg><use href="#file"/></svg> Your text</h3><button id="clear" class="text-button" title="Clear text">Clear <span>×</span></button></div>
+          <div class="input-area"><textarea id="source" maxlength="50000" aria-label="Text to summarize" placeholder="Paste your article, notes, or any long paragraph here…&#10;&#10;We’ll find the important parts for you."></textarea><div class="sample-prompt" id="sample-prompt"><span>Just exploring?</span> <button id="sample">Try an example <span>↗</span></button></div></div>
+          <div class="editor-bottom"><span id="source-count">0 words <span class="count-divider">·</span> 0 characters</span><button id="upload" class="text-button"><svg><use href="#file"/></svg> Upload file</button><input type="file" id="file-input" accept=".txt,.pdf,.png,.jpg,.jpeg,.webp,.mp3,.wav,.m4a,.aac,.flac,.ogg,text/plain,application/pdf,image/png,image/jpeg,image/webp,audio/mpeg,audio/wav,audio/mp4,audio/aac,audio/flac,audio/ogg" aria-label="Upload a document, image, or audio file" aria-describedby="upload-help" hidden /></div>
+        </div>
+        <div class="editor output-editor"><div class="editor-heading"><h3><svg><use href="#spark"/></svg> Your summary <span class="result-badge" id="result-badge" hidden>Ready</span></h3><span class="output-actions"><button id="copy" class="icon-button" aria-label="Copy summary" disabled><svg><use href="#copy"/></svg></button><button id="download" class="icon-button" aria-label="Download summary" disabled><svg><use href="#download"/></svg></button></span></div>
+          <div class="output-area" aria-live="polite" aria-busy="false" id="output-area"><div class="empty-state" id="empty-state"><div class="empty-art"><span></span><svg><use href="#spark"/></svg></div><h4>A little clarity, coming right up.</h4><p>Your key takeaways will appear here.<br>All the meaning, without all the words.</p></div><div class="skeleton" id="skeleton" hidden><i></i><i></i><i></i><i></i><p>Finding what matters…</p></div><div id="summary" class="summary-text" hidden></div></div>
+          <div class="editor-bottom"><span id="summary-count">0 words</span><span id="reduction" class="reduction"><svg><use href="#check"/></svg> Made for easier reading</span></div>
+        </div>
+      </div>
+      <div class="upload-info"><p id="upload-help">Upload TXT, PDF, PNG, JPG, WebP, MP3, WAV, M4A, AAC, FLAC, or OGG · up to 10 MB.<br>Extracted text appears here for review before summarizing. Up to 50,000 characters.</p><p id="upload-status" role="status" aria-live="polite"></p></div>
+      <div class="settings"><div class="setting-group"><span class="setting-label">Summary length</span><div class="segmented" id="lengths" role="group" aria-label="Summary length"><button data-value="short" aria-pressed="false">Short</button><button class="selected" data-value="medium" aria-pressed="true">Medium</button><button data-value="detailed" aria-pressed="false">Detailed</button></div></div><div class="setting-group format-group"><label for="format">Format</label><select id="format"><option value="points">☷  Key points</option><option value="paragraph">¶  Paragraph</option></select></div><button id="summarize" class="primary-button"><svg><use href="#spark"/></svg><span>Summarize text</span><svg class="button-arrow"><use href="#arrow"/></svg></button></div>
+      <div class="error" id="error" role="alert" hidden></div>
+    </section>
+    <div class="assurance"><span><svg><use href="#check"/></svg> No sign-up needed</span><i></i><span><svg><use href="#check"/></svg> The meaning stays intact</span><i></i><span><svg><use href="#check"/></svg> Built for your everyday reading</span></div>
+    <section class="how-section" id="how-it-works"><div class="how-intro"><span class="eyebrow">LESS EFFORT. MORE AHA.</span><h2>Your shortcut to<br>the main idea.</h2></div><div class="steps"><div class="step"><span>01</span><h3>Add text or a file</h3><p>Paste your notes or upload a PDF,<br>image, or audio recording.</p></div><div class="step"><span>02</span><h3>Make it your own</h3><p>Choose the length and format<br>that work for the way you read.</p></div><div class="step"><span>03</span><h3>Take the good bits</h3><p>Get the key ideas. Copy, save,<br>and get on with your day.</p></div></div></section>
+  </main>
+  <footer><a class="brand footer-brand" href="/">briefly<span class="brand-dot">.</span></a><p>Co Founder- Mohammad ishaq</p><span>Less, but better.</span></footer>
+  <div id="toast" class="toast" role="status" hidden>Summary copied</div>
+</body></html>
